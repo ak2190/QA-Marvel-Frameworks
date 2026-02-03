@@ -13,13 +13,13 @@ public abstract class BasePage {
 
     protected WebDriver driver;
 
-    // ✅ Only constructor allowed
+    //only constructor allowed
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    // ✅ Screenshot uses page-owned driver
+    //Screenshot uses page-owned driver
     public String getScreenshot(String testCaseName,WebDriver driver) throws IOException {
 
         TakesScreenshot ts = (TakesScreenshot) driver;

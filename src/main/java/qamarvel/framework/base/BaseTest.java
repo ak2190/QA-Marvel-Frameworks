@@ -2,7 +2,6 @@ package qamarvel.framework.base;
 
 import java.util.Set;
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -11,7 +10,6 @@ import qamarvel.framework.auth.AuthState;
 import qamarvel.framework.auth.acquire.AuthAcquirer;
 import qamarvel.framework.auth.acquire.ApiAuthAcquirer;
 import qamarvel.framework.auth.apply.AuthApplier;
-import qamarvel.framework.auth.apply.HeaderAuthApplier;
 import qamarvel.framework.auth.apply.LocalStorageAuthApplier;
 import qamarvel.framework.auth.verify.DashboardAuthVerifier; 
 import qamarvel.framework.auth.verify.AuthVerifier;
@@ -54,13 +52,15 @@ public abstract class BaseTest {
 				System.out.println(cookie.getName() + " = " + cookie.getValue());
 			}
 
-			JavascriptExecutor js = (JavascriptExecutor) setupDriver;
-
-			System.out.println("===== LOCAL STORAGE =====");
-			System.out.println(js.executeScript("return window.localStorage;"));
+			/*
+			 * JavascriptExecutor js = (JavascriptExecutor) setupDriver;
+			 * 
+			 * System.out.println("===== LOCAL STORAGE =====");
+			 * System.out.println(js.executeScript("return window.localStorage;"));
+			 */
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			DriverFactory.quitDriver();

@@ -12,7 +12,7 @@ public class SessionManager {
 	
 	// SessionManager responsible for handling capturing and restoring browser authentication sessions.
 
-	// to 
+	
 	private SessionManager() {
 	}
 
