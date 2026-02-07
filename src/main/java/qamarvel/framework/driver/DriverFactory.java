@@ -25,7 +25,8 @@ public class DriverFactory {
 	public static void initDriver() {
 
 		// preferred browser selection
-		String browser = ConfigReader.get("browser");
+		String browser = System.getProperty("browser")!=null ? System.getProperty("browser") : ConfigReader.get("browser");
+		//String browser = ConfigReader.get("browser");
 
 		switch (browser.toLowerCase()) {
 		case "firefox":
