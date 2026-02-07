@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import qamarvel.framework.waits.WaitConstants;
 import qamarvel.framework.waits.Waits;
@@ -34,6 +35,8 @@ public abstract class BasePage {
 	protected Optional<By> pageReadyLocator() {
 		return Optional.empty();
 	}
+	
+	
 
 	private void waitForPageToBeReady() {
 		// Structural readiness
@@ -42,6 +45,92 @@ public abstract class BasePage {
 		// Optional page-level anchor
 		pageReadyLocator().ifPresent(locator -> Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM));
 	}
+	
+	
+	/* =========================================================
+    Low-level find (single choke point)
+    ========================================================= */
+
+ protected WebElement find(By locator) {
+     return driver.findElement(locator);
+ }
+
+ /* =========================================================
+    Interaction helpers
+    ========================================================= */
+
+ protected void click(By locator) {
+     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+     find(locator).click();
+ }
+
+ protected void type(By locator, String text) {
+     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+     find(locator).sendKeys(text);
+ }
+
+ protected void clearAndType(By locator, String text) {
+     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+     WebElement element = find(locator);
+     element.clear();
+     element.sendKeys(text);
+ }
+
+ /* =========================================================
+    Read helpers
+    ========================================================= */
+
+ protected String getText(By locator) {
+     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+     return find(locator).getText();
+ }
+
+ protected String getAttribute(By locator, String attribute) {
+     Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+     return find(locator).getAttribute(attribute);
+ }
+
+ protected boolean isVisible(By locator) {
+     try {
+         Waits.waitForVisible(driver, locator, WaitConstants.SHORT);
+         return true;
+     } catch (Exception e) {
+         return false;
+     }
+ }
+
+ protected boolean isPresent(By locator) {
+     try {
+         Waits.waitForPresent(driver, locator, WaitConstants.SHORT);
+         return true;
+     } catch (Exception e) {
+         return false;
+     }
+ }
+
+ /* =========================================================
+    Checkbox helpers
+    ========================================================= */
+
+ protected boolean isChecked(By locator) {
+     Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+     return find(locator).isSelected();
+ }
+
+ protected void check(By locator) {
+     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+     if (!isChecked(locator)) {
+         find(locator).click();
+     }
+ }
+
+ protected void uncheck(By locator) {
+     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+     if (isChecked(locator)) {
+         find(locator).click();
+     }
+ }
 
 	/*
 	 * ========================================================= Protected wait
