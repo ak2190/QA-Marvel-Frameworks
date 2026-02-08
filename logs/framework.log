@@ -383,3 +383,59 @@ Session ID: 7e31d3f9e7765620c8386cb7b9bdc80f
 14:42:43.464 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
 14:42:43.466 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
 14:42:44.294 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+21:17:42.325 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:17:42.514 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:17:48.435 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'arun2190@gmail.com' into element: By.id: userEmail
+21:17:48.808 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'Arun@123' into element: By.id: userPassword
+21:17:49.072 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+21:17:50.081 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+21:17:50.106 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:17:50.132 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:17:59.372 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+21:17:59.440 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+21:17:59.441 [main] INFO  tests.LoginTest - Navigating to Web App
+21:17:59.449 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+21:17:59.456 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+21:18:00.309 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+21:19:01.169 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:19:01.231 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:19:06.636 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'arun2190@gmail.com' into element: By.id: userEmail
+21:19:07.163 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'Arun@123' into element: By.id: userPassword
+21:19:07.596 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+21:19:08.728 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+21:19:08.782 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:19:08.817 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:19:17.837 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+21:19:17.946 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+21:19:17.949 [main] INFO  tests.LoginTest - Navigating to Web App
+21:19:17.957 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+21:19:17.960 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+21:19:18.862 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+21:20:29.519 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:20:29.582 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:20:34.547 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'arun2190@gmail.com' into element: By.id: userEmail
+21:20:34.885 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'Arun@123' into element: By.id: userPassword
+21:20:35.131 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+21:20:36.080 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+21:20:36.107 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:20:36.140 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:20:45.492 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+21:20:45.567 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+21:20:45.568 [main] INFO  tests.LoginTest - Navigating to Web App
+21:20:45.577 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+21:20:45.581 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+21:20:46.450 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+21:28:06.545 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:28:06.600 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:28:12.058 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'arun2190@gmail.com' into element: By.id: userEmail
+21:28:12.526 [main] INFO  qamarvel.pageObjects.LoginPage - Clear and type 'Arun@123' into element: By.id: userPassword
+21:28:12.905 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+21:28:14.065 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+21:28:14.112 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+21:28:14.173 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+21:28:23.708 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+21:28:23.814 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+21:28:23.814 [main] INFO  tests.LoginTest - Navigating to Web App
+21:28:23.826 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+21:28:23.833 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+21:28:24.725 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====

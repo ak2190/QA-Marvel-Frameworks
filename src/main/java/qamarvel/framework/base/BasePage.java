@@ -1,200 +1,241 @@
 package qamarvel.framework.base;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-import org.apache.commons.io.FileUtils;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 
+import qamarvel.framework.config.ConfigManager;
+import qamarvel.framework.config.ConfigReader;
 import qamarvel.framework.logging.FrameworkLogger;
 import qamarvel.framework.waits.WaitConstants;
 import qamarvel.framework.waits.Waits;
 
 public abstract class BasePage {
 
-	protected final WebDriver driver;
-	protected final Logger log =
-	        FrameworkLogger.getLogger(this.getClass());
+    protected final WebDriver driver;
+    protected final Logger log = FrameworkLogger.getLogger(this.getClass());
 
-	// driver injection via constructor
-	protected BasePage(WebDriver driver) {
-		this.driver = driver;
-		waitForPageToBeReady();
-	}
-	
-	
+    /*
+     * =========================================================
+     * Constructor
+     * =========================================================
+     */
+    protected BasePage(WebDriver driver) {
+        this.driver = driver;
+        waitForPageToBeReady();
+    }
 
-	/*
-	 * ========================================================= Page readiness
-	 * contract =========================================================
-	 */
+    /*
+     * =========================================================
+     * Page readiness contract
+     * =========================================================
+     */
 
-	/**
-	 * Override ONLY if the page has a stable, unique anchor element that reliably
-	 * indicates the view has rendered.
-	 */
-	protected Optional<By> pageReadyLocator() {
-		return Optional.empty();
-	}
+    /**
+     * Override ONLY if the page has a stable, unique anchor element
+     * that indicates the page is functionally ready.
+     */
+    protected Optional<By> pageReadyLocator() {
+        return Optional.empty();
+    }
 
-	private void waitForPageToBeReady() {
-		// Structural readiness
-		Waits.waitForPageLoad(driver, WaitConstants.MEDIUM);
+    private void waitForPageToBeReady() {
+        // Structural readiness
+        Waits.waitForPageLoad(driver, WaitConstants.MEDIUM);
 
-		// Optional page-level anchor
-		pageReadyLocator().ifPresent(locator -> Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM));
-	}
+        // Functional readiness (optional)
+        pageReadyLocator()
+                .ifPresent(locator ->
+                        Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM));
+    }
 
-	/*
-	 * ========================================================= Low-level find
-	 * (single choke point)
-	 * =========================================================
-	 */
-	
-	protected WebElement find(By locator) {
-		return driver.findElement(locator);
-	}
+    /*
+     * =========================================================
+     * Low-level find (single choke point)
+     * =========================================================
+     */
 
-	protected List<WebElement> findAll(By locator) {
-		return driver.findElements(locator);
-	}
+    protected WebElement find(By locator) {
+        return driver.findElement(locator);
+    }
 
-	protected WebElement findVisible(By locator) {
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-		return find(locator);
-	}
+    protected List<WebElement> findAll(By locator) {
+        return driver.findElements(locator);
+    }
 
-	protected List<WebElement> findAllPresent(By locator) {
-		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-		return findAll(locator);
-	}
+    /*
+     * =========================================================
+     * Viewport & Highlight helpers
+     * =========================================================
+     */
 
-	
-	/*
-	 * ========================================================= Interaction helpers
-	 * =========================================================
-	 */
+    private void scrollIntoView(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({behavior:'instant', block:'center'});",
+                element
+        );
+    }
 
-	protected void click(By locator) {
-		log.info("Clicking element: {}", locator);
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-		find(locator).click();
-	}
+    private void highlight(WebElement element) {
+        if (!ConfigManager.isHighlightEnabled()) {
+            return;
+        }
 
-	protected void type(By locator, String text) {
-		log.info("Typing '{}' into element: {}", text, locator);
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-		find(locator).sendKeys(text);
-	}
+        ((JavascriptExecutor) driver).executeScript(
+            "const el = arguments[0];" +
+            "const originalBorder = el.style.border;" +
+            "const originalBg = el.style.backgroundColor;" +
 
-	protected void clearAndType(By locator, String text) {
-		log.info("Typing '{}' into element: {}", text, locator);
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-		WebElement element = find(locator);
-		element.clear();
-		element.sendKeys(text);
-	}
+            "el.style.transition='all 0.2s ease';" +
+            "el.style.border='2px solid #FFD700';" +
+            "el.style.backgroundColor='rgba(255, 215, 0, 0.25)';" +
 
-	/*
-	 * ========================================================= Read helpers
-	 * =========================================================
-	 */
-
-	protected String getText(By locator) {
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-		return find(locator).getText();
-	}
-
-	protected String getAttribute(By locator, String attribute) {
-		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-		return find(locator).getAttribute(attribute);
-	}
-
-	protected boolean isVisible(By locator) {
-		try {
-			Waits.waitForVisible(driver, locator, WaitConstants.SHORT);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
-	protected boolean isPresent(By locator) {
-		try {
-			Waits.waitForPresent(driver, locator, WaitConstants.SHORT);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
-	/*
-	 * ========================================================= Checkbox helpers
-	 * =========================================================
-	 */
-
-	protected boolean isChecked(By locator) {
-		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-		return find(locator).isSelected();
-	}
-
-	protected void check(By locator) {
-		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-		if (!isChecked(locator)) {
-			find(locator).click();
-		}
-	}
-
-	protected void uncheck(By locator) {
-		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-		if (isChecked(locator)) {
-			find(locator).click();
-		}
-	}
-
-	
-
-	/*
-	 * ========================================================= Protected wait
-	 * wrappers for page classes
-	 * =========================================================
-	 */
-
-	protected void waitForVisible(By locator) {
-		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-	}
-
-	protected void waitForClickable(By locator) {
-		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-	}
-
-	protected void waitForPresent(By locator) {
-		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-	}
-
-	protected void waitForInvisible(By locator) {
-		Waits.waitForInvisible(driver, locator, WaitConstants.MEDIUM);
-	}
-	
-	 
+            "setTimeout(() => {" +
+            "  el.style.border = originalBorder;" +
+            "  el.style.backgroundColor = originalBg;" +
+            "}, 500);",
+            element
+        );
+    }
 
 
-	// Screenshot uses page-owned driver
-	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+    /*
+     * =========================================================
+     * Element preparation 
+     * =========================================================
+     */
 
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
+    private WebElement prepareElement(By locator) {
+        Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+        Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
 
-		String path = System.getProperty("user.dir") + "/reports/" + testCaseName + ".png";
+        WebElement element = find(locator);
+        scrollIntoView(element);
+        highlight(element);
 
-		FileUtils.copyFile(source, new File(path));
-		return path;
-	}
+        return element;
+    }
+
+    /*
+     * =========================================================
+     * Interaction helpers
+     * =========================================================
+     */
+
+    protected void click(By locator) {
+        log.info("Clicking element: {}", locator);
+        prepareElement(locator).click();
+    }
+
+    protected void type(By locator, String text) {
+        log.info("Typing '{}' into element: {}", text, locator);
+        prepareElement(locator).sendKeys(text);
+    }
+
+    protected void clearAndType(By locator, String text) {
+        log.info("Clear and type '{}' into element: {}", text, locator);
+        WebElement element = prepareElement(locator);
+        element.clear();
+        element.sendKeys(text);
+    }
+
+    /*
+     * =========================================================
+     * Read helpers
+     * =========================================================
+     */
+
+    protected String getText(By locator) {
+        log.info("Getting text from element: {}", locator);
+        Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+
+        WebElement element = find(locator);
+        scrollIntoView(element);
+        highlight(element);
+
+        return element.getText();
+    }
+
+    protected String getAttribute(By locator, String attribute) {
+        log.info("Getting '{}' attribute from element: {}", attribute, locator);
+        Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+
+        WebElement element = find(locator);
+        scrollIntoView(element);
+        highlight(element);
+
+        return element.getAttribute(attribute);
+    }
+
+    protected boolean isVisible(By locator) {
+        try {
+            Waits.waitForVisible(driver, locator, WaitConstants.SHORT);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    protected boolean isPresent(By locator) {
+        try {
+            Waits.waitForPresent(driver, locator, WaitConstants.SHORT);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    /*
+     * =========================================================
+     * Checkbox helpers
+     * =========================================================
+     */
+
+    protected boolean isChecked(By locator) {
+        Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+        return find(locator).isSelected();
+    }
+
+    protected void check(By locator) {
+        log.info("Checking checkbox: {}", locator);
+        WebElement element = prepareElement(locator);
+        if (!element.isSelected()) {
+            element.click();
+        }
+    }
+
+    protected void uncheck(By locator) {
+        log.info("Unchecking checkbox: {}", locator);
+        WebElement element = prepareElement(locator);
+        if (element.isSelected()) {
+            element.click();
+        }
+    }
+
+    /*
+     * =========================================================
+     * Protected wait wrappers (for page-specific flows)
+     * =========================================================
+     */
+
+    protected void waitForVisible(By locator) {
+        Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+    }
+
+    protected void waitForClickable(By locator) {
+        Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+    }
+
+    protected void waitForPresent(By locator) {
+        Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+    }
+
+    protected void waitForInvisible(By locator) {
+        Waits.waitForInvisible(driver, locator, WaitConstants.MEDIUM);
+    }
 }

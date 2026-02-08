@@ -46,7 +46,7 @@ public abstract class BaseTest {
                 System.getProperty("user.dir")
                 + "/reports/run-" + timestamp;
 
-        System.out.println(">>> BaseTest @BeforeSuite. RunDir = " + runDir);
+    //    System.out.println(">>> BaseTest @BeforeSuite. RunDir = " + runDir);
 
         RunContext.setRunDirectory(runDir);
 
@@ -67,17 +67,12 @@ public abstract class BaseTest {
 
 			Set<Cookie> cookies = setupDriver.manage().getCookies();
 
-			System.out.println("===== COOKIES AFTER UI LOGIN =====");
+			
 			for (Cookie cookie : cookies) {
 				System.out.println(cookie.getName() + " = " + cookie.getValue());
 			}
 
-			/*
-			 * JavascriptExecutor js = (JavascriptExecutor) setupDriver;
-			 * 
-			 * System.out.println("===== LOCAL STORAGE =====");
-			 * System.out.println(js.executeScript("return window.localStorage;"));
-			 */
+			
 
 		} catch (Exception e) {
 
