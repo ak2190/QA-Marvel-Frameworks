@@ -2,6 +2,7 @@ package qamarvel.framework.base;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 import org.apache.commons.io.FileUtils;
@@ -35,8 +36,6 @@ public abstract class BasePage {
 	protected Optional<By> pageReadyLocator() {
 		return Optional.empty();
 	}
-	
-	
 
 	private void waitForPageToBeReady() {
 		// Structural readiness
@@ -45,92 +44,113 @@ public abstract class BasePage {
 		// Optional page-level anchor
 		pageReadyLocator().ifPresent(locator -> Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM));
 	}
+
+	/*
+	 * ========================================================= Low-level find
+	 * (single choke point)
+	 * =========================================================
+	 */
 	
+	protected WebElement find(By locator) {
+		return driver.findElement(locator);
+	}
+
+	protected List<WebElement> findAll(By locator) {
+		return driver.findElements(locator);
+	}
+
+	protected WebElement findVisible(By locator) {
+		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+		return find(locator);
+	}
+
+	protected List<WebElement> findAllPresent(By locator) {
+		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+		return findAll(locator);
+	}
+
 	
-	/* =========================================================
-    Low-level find (single choke point)
-    ========================================================= */
+	/*
+	 * ========================================================= Interaction helpers
+	 * =========================================================
+	 */
 
- protected WebElement find(By locator) {
-     return driver.findElement(locator);
- }
+	protected void click(By locator) {
+		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+		find(locator).click();
+	}
 
- /* =========================================================
-    Interaction helpers
-    ========================================================= */
+	protected void type(By locator, String text) {
+		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+		find(locator).sendKeys(text);
+	}
 
- protected void click(By locator) {
-     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-     find(locator).click();
- }
+	protected void clearAndType(By locator, String text) {
+		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+		WebElement element = find(locator);
+		element.clear();
+		element.sendKeys(text);
+	}
 
- protected void type(By locator, String text) {
-     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-     find(locator).sendKeys(text);
- }
+	/*
+	 * ========================================================= Read helpers
+	 * =========================================================
+	 */
 
- protected void clearAndType(By locator, String text) {
-     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-     WebElement element = find(locator);
-     element.clear();
-     element.sendKeys(text);
- }
+	protected String getText(By locator) {
+		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
+		return find(locator).getText();
+	}
 
- /* =========================================================
-    Read helpers
-    ========================================================= */
+	protected String getAttribute(By locator, String attribute) {
+		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+		return find(locator).getAttribute(attribute);
+	}
 
- protected String getText(By locator) {
-     Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
-     return find(locator).getText();
- }
+	protected boolean isVisible(By locator) {
+		try {
+			Waits.waitForVisible(driver, locator, WaitConstants.SHORT);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
 
- protected String getAttribute(By locator, String attribute) {
-     Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-     return find(locator).getAttribute(attribute);
- }
+	protected boolean isPresent(By locator) {
+		try {
+			Waits.waitForPresent(driver, locator, WaitConstants.SHORT);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+	}
 
- protected boolean isVisible(By locator) {
-     try {
-         Waits.waitForVisible(driver, locator, WaitConstants.SHORT);
-         return true;
-     } catch (Exception e) {
-         return false;
-     }
- }
+	/*
+	 * ========================================================= Checkbox helpers
+	 * =========================================================
+	 */
 
- protected boolean isPresent(By locator) {
-     try {
-         Waits.waitForPresent(driver, locator, WaitConstants.SHORT);
-         return true;
-     } catch (Exception e) {
-         return false;
-     }
- }
+	protected boolean isChecked(By locator) {
+		Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
+		return find(locator).isSelected();
+	}
 
- /* =========================================================
-    Checkbox helpers
-    ========================================================= */
+	protected void check(By locator) {
+		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+		if (!isChecked(locator)) {
+			find(locator).click();
+		}
+	}
 
- protected boolean isChecked(By locator) {
-     Waits.waitForPresent(driver, locator, WaitConstants.MEDIUM);
-     return find(locator).isSelected();
- }
+	protected void uncheck(By locator) {
+		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
+		if (isChecked(locator)) {
+			find(locator).click();
+		}
+	}
 
- protected void check(By locator) {
-     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-     if (!isChecked(locator)) {
-         find(locator).click();
-     }
- }
-
- protected void uncheck(By locator) {
-     Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
-     if (isChecked(locator)) {
-         find(locator).click();
-     }
- }
+	
 
 	/*
 	 * ========================================================= Protected wait
