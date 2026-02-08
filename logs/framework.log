@@ -1,0 +1,385 @@
+12:26:30.149 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:26:30.202 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:26:34.112 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+12:26:34.763 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:26:34.794 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:26:44.513 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:26:44.556 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:29:56.777 [main] INFO  tests.DummyTest - 🔥 LOGGING SANITY CHECK 🔥
+12:33:17.090 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:33:17.184 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:33:20.668 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+12:33:21.629 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:33:21.654 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:33:31.263 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:33:31.319 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:41:31.990 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:41:32.044 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:41:37.083 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+12:41:37.989 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:41:38.023 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:41:46.624 [main] INFO  tests.LoginTest - ===== STARTING TEST: validLoginTest =====
+12:41:46.645 [main] INFO  tests.LoginTest - ===== FINISHED TEST: validLoginTest | STATUS: PASS =====
+12:41:47.567 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:41:47.603 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:41:52.628 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+12:41:52.684 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+12:44:12.764 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:44:12.817 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:44:18.131 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+12:44:18.819 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:44:18.845 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:44:27.132 [main] INFO  tests.LoginTest - ===== STARTING TEST: validLoginTest =====
+12:44:27.159 [main] INFO  tests.LoginTest - ===== FINISHED TEST: validLoginTest | STATUS: PASS =====
+12:44:28.024 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:44:28.080 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:44:33.328 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+12:44:33.414 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+12:48:10.814 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:48:10.910 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:48:16.836 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+12:48:17.976 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:48:18.006 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:48:26.450 [main] INFO  tests.LoginTest - ===== STARTING TEST: validLoginTest =====
+12:48:26.467 [main] INFO  tests.LoginTest - ===== FINISHED TEST: validLoginTest | STATUS: PASS =====
+12:48:27.392 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+12:48:27.445 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+12:48:32.698 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+12:48:32.775 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+13:33:09.793 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:33:09.851 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:33:15.459 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:33:15.830 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+13:33:16.020 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+13:33:17.062 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:33:17.087 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:33:26.228 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTest =====
+13:33:26.267 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTest =====
+13:33:26.267 [main] INFO  tests.LoginTest - Navigating to Web App
+13:33:26.727 [main] ERROR q.framework.listeners.TestListeners - TEST FAILED: LoginTest
+13:33:26.727 [main] ERROR q.framework.listeners.TestListeners - Screenshot saved at: H:\QAMarvelWebUIFramework\reports\screenshots\LoginTest_20260208_133326.png
+13:33:26.737 [main] ERROR q.framework.listeners.TestListeners - Current URL: https://rahulshettyacademy.com/client/#/dashboard/dash
+13:33:26.737 [main] ERROR q.framework.listeners.TestListeners - Failure reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:83)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:130)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:194)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at qamarvel.pageObjects.LandingPage.goTo(LandingPage.java:58)
+	at tests.LoginTest.LoginTest(LoginTest.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+13:33:26.745 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTest | STATUS: FAIL =====
+13:33:27.852 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:33:27.912 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:33:27.944 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:33:32.948 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+13:33:32.973 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: goToApp =====
+13:33:32.974 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: goToApp =====
+13:33:32.978 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+13:33:33.380 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:36:08.401 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:36:08.626 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:36:13.868 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:36:14.201 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+13:36:14.443 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+13:36:15.342 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:36:15.393 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:36:25.160 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTest =====
+13:36:25.231 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTest =====
+13:36:25.232 [main] INFO  tests.LoginTest - Navigating to Web App
+13:36:25.573 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:36:41.449 [main] ERROR q.framework.listeners.TestListeners - TEST FAILED: LoginTest
+13:36:41.450 [main] ERROR q.framework.listeners.TestListeners - Screenshot saved at: H:\QAMarvelWebUIFramework\reports\screenshots\LoginTest_20260208_133640.png
+13:36:41.459 [main] ERROR q.framework.listeners.TestListeners - Current URL: https://rahulshettyacademy.com/client/#/dashboard/dash
+13:36:41.459 [main] ERROR q.framework.listeners.TestListeners - Failure reason:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: userEmail (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\WINDOWS\TEMP\scoped_dir5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63326}, goog:processID: 464, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63326/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb4f8b9423fb2d6c94ea92f7e8e68df5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at qamarvel.framework.waits.Waits.waitForVisible(Waits.java:52)
+	at qamarvel.framework.base.BasePage.clearAndType(BasePage.java:99)
+	at qamarvel.pageObjects.LoginPage.login(LoginPage.java:19)
+	at tests.LoginTest.LoginTest(LoginTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+13:36:41.473 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTest | STATUS: FAIL =====
+13:36:42.351 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:36:42.418 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:36:42.457 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:36:48.137 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+13:36:48.168 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: goToApp =====
+13:36:48.170 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: goToApp =====
+13:36:48.172 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+13:36:48.491 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:38:39.146 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:38:39.201 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:38:43.985 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:38:44.352 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+13:38:44.636 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+13:38:45.515 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:38:45.541 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:38:53.994 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+13:38:54.064 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+13:38:54.065 [main] INFO  tests.LoginTest - Navigating to Web App
+13:38:54.278 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:39:09.891 [main] ERROR q.framework.listeners.TestListeners - TEST FAILED: LoginTestEmail
+13:39:09.891 [main] ERROR q.framework.listeners.TestListeners - Screenshot saved at: H:\QAMarvelWebUIFramework\reports\screenshots\LoginTestEmail_20260208_133909.png
+13:39:09.902 [main] ERROR q.framework.listeners.TestListeners - Current URL: https://rahulshettyacademy.com/client/#/dashboard/dash
+13:39:09.903 [main] ERROR q.framework.listeners.TestListeners - Failure reason:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: userEmail (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63448}, goog:processID: 9456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63448/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 921f637d75bb410fb4ec87fd294dd693
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at qamarvel.framework.waits.Waits.waitForVisible(Waits.java:52)
+	at qamarvel.framework.base.BasePage.clearAndType(BasePage.java:99)
+	at qamarvel.pageObjects.LoginPage.login(LoginPage.java:19)
+	at tests.LoginTest.LoginTestEmail(LoginTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+13:39:09.925 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: FAIL =====
+13:39:10.923 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:39:10.987 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:39:11.020 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:39:16.468 [main] INFO  tests.LandingPageTest - ===== STARTING TEST: goToApp =====
+13:39:16.502 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: goToApp =====
+13:39:16.503 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: goToApp =====
+13:39:16.505 [main] INFO  tests.LandingPageTest - ===== FINISHED TEST: goToApp | STATUS: PASS =====
+13:39:17.179 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:42:02.814 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:42:02.855 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:42:07.953 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:42:08.270 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+13:42:08.530 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+13:42:09.292 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:42:09.328 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:42:18.195 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+13:42:18.268 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+13:42:18.268 [main] INFO  tests.LoginTest - Navigating to Web App
+13:42:18.483 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:42:34.076 [main] ERROR q.framework.listeners.TestListeners - TEST FAILED: LoginTestEmail
+13:42:34.077 [main] ERROR q.framework.listeners.TestListeners - Screenshot saved at: H:\QAMarvelWebUIFramework\reports\screenshots\LoginTestEmail_20260208_134233.png
+13:42:34.087 [main] ERROR q.framework.listeners.TestListeners - Current URL: https://rahulshettyacademy.com/client/#/dashboard/dash
+13:42:34.087 [main] ERROR q.framework.listeners.TestListeners - Failure reason:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: userEmail (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63567}, goog:processID: 3884, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63567/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e31d3f9e7765620c8386cb7b9bdc80f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at qamarvel.framework.waits.Waits.waitForVisible(Waits.java:52)
+	at qamarvel.framework.base.BasePage.clearAndType(BasePage.java:99)
+	at qamarvel.pageObjects.LoginPage.login(LoginPage.java:19)
+	at tests.LoginTest.LoginTestEmail(LoginTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+13:42:34.093 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: FAIL =====
+13:42:35.624 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+13:46:34.594 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:46:34.646 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:46:40.185 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+13:46:40.521 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+13:46:40.741 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+13:46:41.855 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+13:46:41.885 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+13:46:50.279 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+13:46:50.349 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+13:46:50.350 [main] INFO  tests.LoginTest - Navigating to Web App
+13:46:50.377 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+13:46:50.380 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+13:46:51.242 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+14:04:41.732 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:04:41.780 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:04:44.570 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+14:04:44.802 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+14:04:44.937 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+14:04:45.421 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:04:45.444 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:04:53.438 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+14:04:53.488 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+14:04:53.489 [main] INFO  tests.LoginTest - Navigating to Web App
+14:04:53.495 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+14:04:53.497 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+14:04:54.206 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+14:06:36.041 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:06:36.090 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:06:40.477 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+14:06:40.687 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+14:06:40.824 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+14:06:41.291 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:06:41.314 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:06:48.792 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+14:06:48.845 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+14:06:48.846 [main] INFO  tests.LoginTest - Navigating to Web App
+14:06:48.855 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+14:06:48.857 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+14:06:49.656 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+14:19:50.374 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:19:50.418 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:19:56.402 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+14:19:56.761 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+14:19:57.011 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+14:19:57.776 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:19:57.801 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:20:06.633 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+14:20:06.701 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+14:20:06.702 [main] INFO  tests.LoginTest - Navigating to Web App
+14:20:06.710 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+14:20:06.711 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+14:20:07.573 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+14:39:13.433 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:39:13.485 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:39:18.867 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+14:39:19.216 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+14:39:19.468 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+14:39:20.815 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+14:39:20.843 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:39:20.873 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:39:31.671 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+14:39:31.740 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+14:39:31.740 [main] INFO  tests.LoginTest - Navigating to Web App
+14:39:31.748 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+14:39:31.753 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+14:39:32.634 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====
+14:42:27.362 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:42:27.431 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:42:32.293 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'arun2190@gmail.com' into element: By.id: userEmail
+14:42:32.653 [main] INFO  qamarvel.pageObjects.LoginPage - Typing 'Arun@123' into element: By.id: userPassword
+14:42:32.845 [main] INFO  qamarvel.pageObjects.LoginPage - Clicking element: By.id: login
+14:42:34.103 [main] INFO  q.framework.listeners.TestListeners - ===== EXTENT REPORT INITIALIZED =====
+14:42:34.150 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 144.0.7559.133 (resolved driver for Chrome 144)
+14:42:34.198 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\HOME\.cache\selenium\chromedriver\win64\144.0.7559.133\chromedriver.exe
+14:42:43.400 [main] INFO  tests.LoginTest - ===== STARTING TEST: LoginTestEmail =====
+14:42:43.457 [main] INFO  q.framework.listeners.TestListeners - ===== TEST STARTED: LoginTestEmail =====
+14:42:43.458 [main] INFO  tests.LoginTest - Navigating to Web App
+14:42:43.464 [main] INFO  q.framework.listeners.TestListeners - ===== TEST PASSED: LoginTestEmail =====
+14:42:43.466 [main] INFO  tests.LoginTest - ===== FINISHED TEST: LoginTestEmail | STATUS: PASS =====
+14:42:44.294 [main] INFO  q.framework.listeners.TestListeners - ===== TEST EXECUTION FINISHED =====

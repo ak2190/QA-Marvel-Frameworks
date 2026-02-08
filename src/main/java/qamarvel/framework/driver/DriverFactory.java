@@ -45,12 +45,14 @@ public class DriverFactory {
 			WebDriverManager.chromedriver().setup();
 			// stores driver in the current thread
 			driver.set(new ChromeDriver());
+			
 			break;
 
 		}
 
 		// maximize window
 		getDriver().manage().window().maximize();
+		
 	}
 
 	// returns driver for the current thread only

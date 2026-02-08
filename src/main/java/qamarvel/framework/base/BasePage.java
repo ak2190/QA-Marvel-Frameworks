@@ -4,25 +4,31 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
 
+import qamarvel.framework.logging.FrameworkLogger;
 import qamarvel.framework.waits.WaitConstants;
 import qamarvel.framework.waits.Waits;
 
 public abstract class BasePage {
 
 	protected final WebDriver driver;
+	protected final Logger log =
+	        FrameworkLogger.getLogger(this.getClass());
 
+	// driver injection via constructor
 	protected BasePage(WebDriver driver) {
 		this.driver = driver;
 		waitForPageToBeReady();
 	}
+	
+	
 
 	/*
 	 * ========================================================= Page readiness
@@ -76,17 +82,20 @@ public abstract class BasePage {
 	 */
 
 	protected void click(By locator) {
+		log.info("Clicking element: {}", locator);
 		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
 		Waits.waitForClickable(driver, locator, WaitConstants.MEDIUM);
 		find(locator).click();
 	}
 
 	protected void type(By locator, String text) {
+		log.info("Typing '{}' into element: {}", text, locator);
 		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
 		find(locator).sendKeys(text);
 	}
 
 	protected void clearAndType(By locator, String text) {
+		log.info("Typing '{}' into element: {}", text, locator);
 		Waits.waitForVisible(driver, locator, WaitConstants.MEDIUM);
 		WebElement element = find(locator);
 		element.clear();
@@ -173,6 +182,9 @@ public abstract class BasePage {
 	protected void waitForInvisible(By locator) {
 		Waits.waitForInvisible(driver, locator, WaitConstants.MEDIUM);
 	}
+	
+	 
+
 
 	// Screenshot uses page-owned driver
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
